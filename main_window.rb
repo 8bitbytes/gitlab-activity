@@ -28,7 +28,7 @@ class GitlabActivityMainWindow
     service_initialize
     presenter_initialize
     @message_bus.add_observer(self)
-    @message_bus.publish_message(message: Model::EventMessages::StatusBarUpdateQueueMessage.new(message: 'Merge Request Reminder is running in the background', display_for: 0))
+    @message_bus.publish_message(message: Model::EventMessages::StatusBarUpdateQueueMessage.new(message: 'Gitlab activity is running in the background', display_for: 0))
     refresh_interval = @settings_service.settings.check_interval_in_minutes.to_i * 60
     @countdown_service = Service::Countdown.new(countdown_seconds: refresh_interval,
                                                 on_timer_complete: method(:send_reload_message), on_tick: method(:timer_tick))
@@ -50,7 +50,7 @@ class GitlabActivityMainWindow
   end
 
   def launch
-    Service::OsxNotification.new.show_notification('Merge Request Reminder', 'Merge Request Reminder is running in the background')
+    Service::OsxNotification.new.show_notification('Gitlab Activity', 'Gitlab Activity is running in the background')
     Service::StatusMessageQueue.instance.process_queue
     start_auto_refresh
     main_window.show

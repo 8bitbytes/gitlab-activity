@@ -8,7 +8,7 @@ This project is a Ruby application that provides a user interface for viewing Gi
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Features](#features)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 - [FAQ](#faq)
 - [Troubleshooting](#troubleshooting)
 - [Development](#development)
@@ -59,7 +59,8 @@ This project is a Ruby application that provides a user interface for viewing Gi
 - View issues authored by the user
 - Configure GitLab credentials and check intervals
 
-
+## Screenshot
+![img.png](img.png)
 ## FAQ
 **Q1: How do I configure the application?**
 

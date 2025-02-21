@@ -9,8 +9,8 @@ module Presenter
 
     def initialize
       @message_bus = Service::MessageBus.instance
-      @status_text = 'Merge Request Reminder is running in the background'
-      @restore_status_text = 'Merge Request Reminder is running in the background'
+      @status_text = 'Gitlab Activity is running in the background'
+      @restore_status_text = 'Gitlab Activity is running in the background'
       @message_bus = Service::MessageBus.instance
       @message_bus.add_observer(self)
       @text_color = :white

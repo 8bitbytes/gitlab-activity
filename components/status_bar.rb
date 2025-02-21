@@ -14,7 +14,7 @@ module Component
     attr_accessor :status_text, :label_color
 
     def initialize
-      @status_text = 'Merge Request Reminder is running in the background'
+      @status_text = 'Gitlab Activity is running in the background'
       @message_bus = Service::MessageBus.instance
       @message_bus.add_observer(self)
       @label_color = :white
