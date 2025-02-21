@@ -105,7 +105,7 @@ These are classes that are used to interact with external services as well as ma
 
 
 ## Acknowledgements
-- [Built using Glimmer](https://github.com/AndyObtiva/glimmer) - Glimmer is a simple to use dependency free framework for developing Ruby applications. 
+- [Built using Glimmer](https://github.com/AndyObtiva/glimmer-dsl-libui) - Glimmer is a simple to use dependency free framework for developing Ruby applications. 
 
 ## License
 
